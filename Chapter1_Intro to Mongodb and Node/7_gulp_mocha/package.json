@@ -1,0 +1,11 @@
+{
+	"scripts" : {
+		"test" : "mocha test.js",
+		"watch" : "gulp watch"
+	},
+	"devDependencies" : {
+		"gulp" : "3.9.0",
+		"gulp-mocha" : "2.2.0",
+		"mocha" : "2.3.4"
+	}
+}
