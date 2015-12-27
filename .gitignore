@@ -1,0 +1,12 @@
+.DS_Store
+
+node_modules
+npm-debug.log*
+
+
+# Optional REPL history
+.node_repl_history
+
+# Optional npm cache directory
+.npm
+
