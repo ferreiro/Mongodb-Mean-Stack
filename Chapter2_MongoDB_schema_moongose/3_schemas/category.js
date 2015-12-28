@@ -24,10 +24,10 @@ var categorySchema = {
 		type: String,
 		ref: 'Category' // Population: http://mongoosejs.com/docs/populate.html
 	},
-	ancestors: {
+	ancestors: [{
 		type: String,
 		ref: 'Category' // Population: http://mongoosejs.com/docs/populate.html
-	}
+	}]
 };
 
 module.exports = new mongoose.Schema(categorySchema);
