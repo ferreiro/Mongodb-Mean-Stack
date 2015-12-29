@@ -7,7 +7,7 @@ module.exports = function(wagner) {
     mongoose.model('Category', require('./category'), 'categories');
 
   wagner.factory('Category', function() {
-    return Category;
+    return Category; // register category service wiyh wagner
   });
 
   return {
