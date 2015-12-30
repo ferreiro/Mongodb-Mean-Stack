@@ -2,14 +2,13 @@ var mongoose = require('mongoose');
 
 var categorySchema = {
 	_id: {
-		type: String,
-		required: true
+		type: String
 	},
 	parent: {
 		type: String,
 		ref: 'Category'
 	},
-	ancestors: [{
+	descendants: [{
 		type: String,
 		ref: 'Category'
 	}]
