@@ -8,9 +8,7 @@ function setupAuth(User, app) {
   });
 
   passport.deserializeUser(function(id, done) {
-    User.
-      findOne({ _id : id }).
-      exec(done);
+    User.findOne({ _id : id }).exec(done);
   });
 
   // Facebook-specific
