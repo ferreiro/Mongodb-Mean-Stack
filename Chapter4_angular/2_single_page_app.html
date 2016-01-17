@@ -1,0 +1,27 @@
+<html ng-app="myApp">
+<head>
+	<title>Single page app</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js">
+	</script>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', ['ng', 'ngRoute']);
+		app.config(function($routeProvider) {
+			$routeProvider.
+				when('/', {
+					template: '<h1>Home Page</h1><a ng-href="#/about">Go about</a>'
+				}).
+				when('/about', {
+					template: '<a ng-href="#/">Back to home</a>'
+				});
+		});
+	</script>
+
+</head>
+<body>
+	<div ng-view></div>
+</body>
+</html>
